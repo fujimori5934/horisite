@@ -1,0 +1,34 @@
+$main-color: #C4CCEB;
+$sub-color: white;
+$font-1: 30px;
+$font-2: 20px;
+$font-3: 16px;
+$sp: 480px;
+
+@mixin sp {
+  @media (max-width: ($sp)){
+    @content;
+  }
+}
+@mixin pad {
+  @media (min-width: ($sp)) and (max-width: 800px){
+    @content;
+  }
+}
+
+.body {
+  margin: 0;
+  background-color: gray;
+}
+
+
+
+.slider {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}

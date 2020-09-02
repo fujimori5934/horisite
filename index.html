@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>site</title>
+    <link rel="reset.css" href="css/reset.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+
+  <body>
+    <header>
+      <div class="header-logo">
+        <h2>レンタルルーム堀</h2>
+      </div>
+      <div class="header-title">
+        <p>新しい空間を<br>あなたに</p>
+      </div>
+    </header>
+    <main>
+      <div class="copy-container">
+        <div id="slide_show">
+          <ul class="slider">
+            <li><img src="pic/img1.jpg" ></li>
+            <li><img src="pic/img2.jpg" ></li>
+            <li><img src="pic/img3.jpg"></li> 
+          </ul>
+        </div>
+      </div>
+    </main>
+    <div class="contents">
+      <a href="" class="btn" input type="button" >早速利用してみる</a>
+      <h2>ご利用方法</h2>
+      <ul class="container">
+        <li class="box1">
+          <img class="box-img" src="pic/img4.jpg">
+          <p>カレンダーで希望日時の空室を確認</p>
+        </li>
+        <li class="box2">
+          <img class="box-img" src="pic/img5.jpg">
+          <p>カレンダーから希望日時を選択し予約する</p>
+        </li>
+      </ul>
+      <ul class="container">
+        <li class="box3">
+          <img class="box-img" src="pic/img6.jpg">
+          <p>予約完了後にお支払い</p>
+        </li>
+        <li class="box4">
+          <img class="box-img" src="pic/img6.jpg">
+            <p>当日利用開始前に会場へ</p>
+        </li>
+      </ul>     
+    </div>
+    <section class="calendar">
+      <h2>カレンダー</h2>
+    </section>
+    <div class="contact">
+      <h3>お問い合わせ</h3>
+      <div class="form">
+        <form action="send.php" method="post">
+            氏名を入力してください
+          <input type="text" name="data">
+        </form>
+        <form action="send.php" method="post">
+          Emailを入力してください
+        <input type="text" name="email">
+     　 </form>
+        <form action="send.php" method="post">
+          電話番号を入力してください
+        <input type="text" name="tel">
+    　  </form>
+    　  <form action="send.php" method="post">
+        内容
+      　<textarea name="content"></textarea>
+    　　</form>
+        <input type="submit" value="送信">
+      </div>
+    </div>
+
+    <footer>
+      <h3>会社概要</h3>
+      <p>会社名</p>
+      <p>代表者</p>
+      <p>会社所在地</p>
+      <p>電話番号</p>
+    </footer>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
